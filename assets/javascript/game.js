@@ -13,6 +13,7 @@ function restart() {
 
     randomNumber;
     yourScore = 0;
+    $('#yourScore').text(yourScore);
 
     gem1 = 0;
     gem2 = 0;
@@ -68,16 +69,16 @@ $('#gem4').on('click', function () {
 });
 
 //Scoring statements
-function scoring() {
-    if (randomNumber === yourScore) {
-        wins++;
-        console.log('Wins: ' + wins);
-        $('#wins').text(wins);
-        restart();
-    } else if (yourScore > randomNumber) {
-        losses++;
-        console.log('Losses: ' + losses);
-        $('#losses').text(losses);
-        restart();
+    function scoring() {
+        if (randomNumber === yourScore) {
+            wins++;
+            console.log('Wins: ' + wins);
+            $('#wins').text(wins);
+            restart();
+        } else if (yourScore > randomNumber) {
+            losses++;
+            console.log('Losses: ' + losses);
+            $('#losses').text(losses);
+            restart();
+        }
     }
-}

@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gem Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Metamorphous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <main class="container">
         <div>
-            <h1 class="text-center">Crystals Collector</h1>
+            <h1 class="text-center py-2 rainbow">Crystals Collector</h1>
         </div>
         <section class="jumbotron row">
-            <div class="col-md-6">
+            <div class="col-md-6 align-self-center">
                 <h2>Instructions:</h2>
                 <ul>
                     <li>You'll be given a random number at the start of the game.</li>
@@ -26,14 +29,18 @@
                     <li>The value of each crystal is hidden until you click on it.</li>
                     <li>Each time the game restarts, the value of the gems will be restarted.</li>
                 </ul>
+                <div class="text-center">
+                    <a href="#game-section"><button class="btn-lg btn-primary">Lets Start!</button></a>
+                </div>
             </div>
             <div class="col-md-6">
                 <h2 class="text-center">GOOD LUCK!</h2>
+                <img class="w-100" src="assets/images/chuck.gif">
             </div>
 
         </section>
 
-        <section class="jumbotron row">
+        <section id="game-section" class="jumbotron row">
             <div class="text-center col-md-6">
                 <h2>Your Number:</h2>
                 <h3 id="selectedNumber"></h3>
@@ -44,20 +51,22 @@
             </div>
         </section>
 
-        <section class="jumbotron">
-            <div class="mx-auto row">
-                <button class="col-md-2 mx-2" id="gem1">Gem 1</button>
-                <button class="col-md-2 mx-2" id="gem2">Gem 2</button>
-                <button class="col-md-2 mx-2" id="gem3">Gem 3</button>
-                <button class="col-md-2 mx-2" id="gem4">Gem 4</button>
+        <section class="jumbotron row">
+            <div class="col-md-12 row">
+                <div class="col-md-2"></div>
+                <img src="assets/images/orangeGem.png" class="col-md-2 mx-2 w-100" id="gem1">
+                <img src="assets/images/blueJewel.png" class="col-md-2 mx-2 w-100" id="gem2">
+                <img src="assets/images/greenJewel.png" class="col-md-2 mx-2 w-100" id="gem3">
+                <img src="assets/images/pinkJewel.png" class="col-md-2 w-100" id="gem4">
+                <div class="col-md-2"></div>
             </div>
         </section>
 
         <section class="jumbotron row">
             <div class="col-md-12 text-center">
-            <h2>Your total score is:</h2>
-            <h3 id="yourScore"></h3>
-        </div>
+                <h2>Your total score is:</h2>
+                <h3 id="yourScore"></h3>
+            </div>
         </section>
 
     </main>
