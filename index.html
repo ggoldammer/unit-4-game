@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gem Guessing Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <div>
+            <h1 class="text-center">Crystals Collector</h1>
+        </div>
+        <section class="jumbotron row">
+            <div class="col-md-6">
+                <h2>Instructions:</h2>
+                <ul>
+                    <li>You'll be given a random number at the start of the game.</li>
+                    <li>Click the four crystals below to add to your total score.</li>
+                    <li>You <strong>win</strong> by matching your score with your given number.</li>
+                    <li>You <strong>lose</strong> by going over your given number.</li>
+                    <li>The value of each crystal is hidden until you click on it.</li>
+                    <li>Each time the game restarts, the value of the gems will be restarted.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">GOOD LUCK!</h2>
+            </div>
+
+        </section>
+
+        <section class="jumbotron row">
+            <div class="text-center col-md-6">
+                <h2>Your Number:</h2>
+                <h3 id="selectedNumber"></h3>
+            </div>
+            <div class="text-center col-md-6">
+                <h3>Wins: <span id="wins"></span></h3>
+                <h3>Losses: <span id="losses"></span></h3>
+            </div>
+        </section>
+
+        <section class="jumbotron">
+            <div class="mx-auto row">
+                <button class="col-md-2 mx-2" id="gem1">Gem 1</button>
+                <button class="col-md-2 mx-2" id="gem2">Gem 2</button>
+                <button class="col-md-2 mx-2" id="gem3">Gem 3</button>
+                <button class="col-md-2 mx-2" id="gem4">Gem 4</button>
+            </div>
+        </section>
+
+        <section class="jumbotron row">
+            <div class="col-md-12 text-center">
+            <h2>Your total score is:</h2>
+            <h3 id="yourScore"></h3>
+        </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
